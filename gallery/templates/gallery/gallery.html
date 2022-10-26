@@ -1,0 +1,121 @@
+{% load static %}
+{% load embed_video_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'gallery/style.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/plugin.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/font.css' %}">
+    <meta name="description" content="Mayfair Academy - The Place to discover and unvail your excellence" />
+    <!-- document title -->
+    <title>Mayfair Academy | Welcome | Home - The Place to discover and unvail your excellence</title>
+</head>
+
+<body>
+    <!-- MAIN WRAPPER START
+            ============================================= -->
+    <div class="main-wrapper clearfix">
+        <!-- HEADER START
+                ============================================= -->
+        <header id="header">
+            <div class="header-style1-wrap">
+                <div class="header-content-left">
+                    <!-- LOGO START
+                        ============================================= -->
+                    <div class="logo">
+                        <h2 class="logo-title">
+                            <a href="{% url 'main' %}">Mayfair Academy - Gallery</a>
+                        </h2>
+                    </div>
+                    <!-- LOGO END -->
+                </div>
+                <div class="header-content-right">
+                    <!-- NAVIGATION START
+                        ============================================= -->
+                <nav class="main-nav col-span-9  sm:col-span-12">
+                    <!-- Mobile menu toggle button -->
+                    <button class="jepret-menu-mobile">
+                        <i class="icon icon-reorder"></i>
+                    </button>
+                    <!-- Sample menu definition -->
+                    <ul id="main-menu" class="sm sm-clean mobile-menu">
+                        <li class="menu-item has-submenu">
+                            <a href="{% url 'gallery:green_club_gallery' %}">Green Club</a>
+                        </li>
+                        <li class="menu-item has-submenu">
+                            <a href="{% url 'gallery:school_gallery' %}">School Gallery</a>
+                        </li>
+                        <li class="menu-item has-submenu">
+                            <a href="{% url 'gallery:grade_r' %}">Grade R</a>
+                        </li>
+                        <li class="menu-item has-submenu">
+                            <a href="{% url 'gallery:madrassa' %}">Madrassa</a> 
+                        </li>
+                    </ul>
+                </nav>
+                    <!-- NAVIGATION END -->
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+        <!-- Content -->
+        <section class="content">
+            <div class="top-bar"></div>
+            <div class="left-bar"></div>
+            <div class="right-bar"></div>
+            <!-- Bg video block -->
+            <div class="bg-video-block">
+                <div class="bg-video-wrap">
+                  
+                    <iframe class="video-bg" src="https://www.youtube.com/embed/i1ZLBscg62A?autoplay=1&mute=1">
+                    </iframe>
+                    <div class="video-overlay"></div>
+                    <div class="video-content">
+                        <div class="container" data-aos="fade-up">
+                            <div class="video-title">
+                                <h1>Welcome To Mayfair Academy</h1>
+                            </div>
+                            <div class="signature-wrap">
+                                <h2 class="author-name">Our Gallery</h2>
+                            </div>
+                            <div class="video-button">
+                                <a style="background-color: rgba(242, 135, 6, 0.815);" href="{% url 'gallery:green_club_gallery' %}" class="button style-1">View Gallery</a>
+                                <a style="background-color: rgba(18, 6, 242, 0.815);" href="{% url 'main' %}" class="button style-2">Go Back Home</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Bg video block -->
+        </section>
+        <!-- End Content -->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="copyright">
+                <p class="copyright-text">Mayfair Academy &copy; 2022</p>
+            </div>
+        </footer>
+        <!-- end Footer -->
+    </div>
+    <!-- MAIN WRAPPER END -->
+    <!-- Footer Scripts
+            ============================================= -->
+    <!-- JavaScripts
+        ============================================= -->
+    <script src="{% static 'gallery/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'gallery/js/jquery.smartmenus.min.js' %}"></script>
+    <script src="{% static 'gallery/js/aos.js' %}"></script>
+    <script src="{% static 'gallery/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'gallery/js/lightgallery-all.min.js' %}"></script>
+    <script src="{% static 'gallery/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'gallery/js/isotope.js' %}"></script>
+    <script src="{% static 'gallery/js/main.js' %}"></script>
+</body>
+
+</html>

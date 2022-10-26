@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'gallery/style.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/plugin.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/font.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/lightgallery.min.css' %}">
+
+    <meta name="description" content="Mayfair Academy - The Place to discover and unvail your excellence" />
+    <!-- document title -->
+    <title>Mayfair Academy | Welcome | Home - The Place to discover and unvail your excellence</title>
+</head>
+
+<body class="std-grid">
+    <!-- MAIN WRAPPER START
+            ============================================= -->
+    <div class="main-wrapper clearfix">
+        <!-- HEADER START
+                ============================================= -->
+        <header id="header">
+            <div class="header-style1-wrap">
+                <div class="header-content-left">
+                    <!-- LOGO START
+                                ============================================ -->
+                    <div class="logo">
+                        <h2 class="logo-title">
+                            <a style="background-color: rgba(242, 65, 6, 0.815);" href="{% url 'main' %}" class="button style-2">Go Back Home</a>
+                        </h2>
+                    </div>
+                    <!-- LOGO END -->
+                </div>
+                <div class="header-content-right">
+                    <!-- NAVIGATION START
+                                ============================================= -->
+                    <nav class="main-nav col-span-9  sm:col-span-12">
+                        <!-- Mobile menu toggle button -->
+                        <button class="jepret-menu-mobile">
+                            <i class="icon icon-reorder"></i>
+                        </button>
+                        <!-- Sample menu definition -->
+                        <ul id="main-menu" class="sm sm-clean mobile-menu">
+                            <li class="menu-item has-submenu">
+                                <a href="{% url 'gallery:green_club_gallery' %}">Green Club</a>
+                            </li>
+                            <li class="menu-item has-submenu">
+                                <a href="{% url 'gallery:school_gallery' %}">School Gallery</a>
+                            </li>
+                            <li class="menu-item has-submenu">
+                                <a href="{% url 'gallery:grade_r' %}">Grade R</a>
+                            </li>
+                            <li class="menu-item has-submenu">
+                                <a href="{% url 'gallery:madrassa' %}">Madrassa</a> 
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- NAVIGATION END -->
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+        <!-- Content -->
+        <div class="content">
+            <div class="top-bar"></div>
+            <div class="left-bar"></div>
+            <div class="right-bar"></div>
+
+            <div class="gallery-grid-block standard-grid">
+                <div class="gallery-grid-item-wrap gallery-grid">
+                    {% for item in grade_r %}  
+                    <div class="column column-3 gallery-grid-item" data-src="{{ item.image.url }}">
+                        <img src="{{ item.image.url }}"
+                            alt="{{ item.title }} {{ item.timestamp }}" class="gallery-item">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+        </div>
+        <!-- end Content -->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="copyright">
+                <p class="copyright-text">Mayfair Academy &copy; 2022</p>
+            </div>
+        </footer>
+        <!-- end Footer -->
+    </div>
+
+    <!-- Footer Scripts
+            ============================================= -->
+    <!-- JavaScripts
+        ============================================= -->
+    <script src="{% static 'gallery/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'gallery/js/jquery.smartmenus.min.js' %}"></script>
+    <script src="{% static 'gallery/js/aos.js' %}"></script>
+    <script src="{% static 'gallery/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'gallery/js/isotope.js' %}"></script>
+    <script src="{% static 'gallery/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'gallery/js/lightgallery-all.min.js' %}"></script>
+    <script src="{% static 'gallery/js/main.js' %}"></script>
+</body>
+
+</html>
+
+
+                   

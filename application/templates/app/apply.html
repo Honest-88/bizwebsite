@@ -1,0 +1,737 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayfair Academy | Welcome | Home - The Place to discover and unvail your excellence</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}" />
+    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}" />
+    <meta name="description" content="Mayfair Academy - The Place to discover and unvail your excellence" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/animate/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/animate/custom-animate.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/jarallax/jarallax.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/jquery-magnific-popup/jquery.magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/nouislider/nouislider.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/nouislider/nouislider.pips.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/odometer/odometer.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/swiper/swiper.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/conult-icons/style.css' %}">
+    <link rel="stylesheet" href="{% static 'vendors/tiny-slider/tiny-slider.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/reey-font/stylesheet.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/bxslider/jquery.bxslider.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/bootstrap-select/css/bootstrap-select.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/vegas/vegas.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/jquery-ui/jquery-ui.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendors/timepicker/timePicker.css' %}" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="{% static 'styles/conult.css' %}" />
+    <link rel="stylesheet" href="{% static 'styles/conult-responsive.css' %}" />
+</head>
+
+<!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('hnf3tc2v46n3');
+</script>
+    <!-- End of Async Drift Code -->
+<body>
+    <div class="preloader">
+        <img class="preloader__image" width="60" src="{% static 'images/loader.png' %}" alt="" />
+    </div>
+    <!-- /.preloader -->
+    <div class="page-wrapper">
+        <header class="main-header clearfix">
+            <div class="main-header__top clearfix">
+                <div class="main-header__top-inner clearfix">
+                    <div class="main-header__top-left">
+                        <ul class="list-unstyled main-header__top-address">
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-pin"></span>
+                                </div>
+                                <div class="text">
+                                    <p>66-9th Ave, Mayfair, Johannesburg, South Africa </p>
+                                </div>                        
+                            </li>
+                               
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="mailto:info@mayfairacademy.co.za">info@mayfairacademy.co.za</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="{% url 'newsletters:letters_list' %}">News Letters</a> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="{% url 'application:apply' %}">Apply Here</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <span class="icon-email"></span>
+                                </div>
+                                <div class="text">
+                                    <p><a href="{% url 'grade_r:grade_r' %} ">Grade R</a></p>
+                                </div>
+                            </li>
+ 
+                        </ul>
+                    </div>
+                    <div class="main-header__top-right">
+                        <div class="main-header__top-right-social">
+                            <a href="https://www.facebook.com/mayfairacademysa/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.youtube.com/channel/UCkEcgEKkayINOtLkZfIJTcg"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="main-menu clearfix">
+                <div class="main-menu-wrapper clearfix">
+                    <div class="main-menu-wrapper__left">
+                        <div class="main-menu-wrapper__logo">
+                            <a href="{% url 'main' %}"><img src="{% static 'images/resources/logo.png' %}" height="100" width="100" alt=""></a>
+                        </div>
+                        <div class="main-menu-wrapper__main-menu">
+                            <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                            <ul class="main-menu__list">
+                                <li class="dropdown current">
+                                    <a href="{% url 'main' %}">Home</a>                               
+                                </li>
+                                <li class="dropdown">
+                                    <a href="{% url 'about:about' %}">About Us</a>
+                                    <ul>
+                                        <li><a href="{% url 'newsletters:letters_list' %}">News Letters</a></li> 
+                                        <li><a href="{% url 'grade_r:grade_r' %} ">Grade R</a></li>                                    
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'madrassa:madrassa' %}">Madrassah</a></li>
+                                <li class="dropdown">
+                                    <a href="{% url 'projects:projects' %}">Events</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="{% url 'post_list' %}">News & Updates</a>
+                                    
+                                </li>
+                                <li><a href="{% url 'library:library' %}">Online Library</a></li>
+                                <li><a href="{% url 'gallery:gallery' %}">Gallery</a></li>
+                                <li><a href="{% url 'application:apply' %}">Apply Here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-menu-wrapper__right">
+                        <div class="main-menu-wrapper__call">
+                            <div class="main-menu-wrapper__call-icon">
+                                <span class="icon-phone"></span>
+                            </div>
+                            <div class="main-menu-wrapper__call-number">
+                                <p>Call Anytime</p>
+                                <h5><a href="tel:+27 (0) 11 837 1899">Tel: +27 (0) 11 837 1899</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <div class="page-header-bg" style="background-image: url('/static/images/about.jpg')">
+            </div>
+            <div class="container">
+                <div class="page-header__inner">
+                    <h2>Application Form - Fill The Entire Form & Submit</h2>
+                    <ul class="thm-breadcrumb list-unstyled">
+                        <li><a href="{% url 'main' %}">Home</a></li>
+                        <li class="active">Application Form</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--contact Page Start-->
+          <section class="contact-page">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="section-title__tagline">Fill The Entire Form & Submit</span>
+                    <h2 class="section-title__title">Fill The Entire Form & Submit</h2>
+                </div>
+                {% include 'includes/messages.html' %}
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="contact-page__form">
+                            <form action="{% url 'application:apply' %}" method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+                            
+                            <div class="row">
+                            <div class="col-xl-12">
+                                <div class="comment-form__input-box">
+                                    <input type="text" placeholder="Enter Child's full name" name="child_full_name">
+                                </div>
+                            </div>
+                    
+                            <div class="col-xl-12">
+                                <div class="comment-form__input-box">
+                                    <input type="text" placeholder="Enter Emergency numbers" name="emergency_numbers">
+                                </div>
+                            </div>
+                                                    
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter Phone numbers" name="cell_numbers">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="email" placeholder="Enter Email address" name="email_address">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter grade applied for" name="grade_applied_for">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter highest grade passed" name="highest_grade_passed">
+                              </div>
+                            </div>
+                            
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter year grade passed" name="year_grade_passed">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter accession number" name="accession_no">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter first name" name="first_name">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter last name" name="last_name">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="other names (if any?)" name="other_names">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter date of birth" name="date_of_birth">
+                              </div>
+                            </div>
+                                
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Your gender (Male/Female)" name="gender">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Your race (African, Caucasian etc)" name="race">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter your citizenship" name="citizenship">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter province of residence" name="province_of_residence">
+                              </div>
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                              <label for="physical_address" style="font-size: 20px;">Physical Address</label>
+                              <textarea class="form-control" rows="3" name="physical_address" placeholder="Enter physical address"></textarea>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter your city or suburb" name="city_or_suburb">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter your postal code" name="postal_code">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter your home langauge" name="home_langauge">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Your preferred language of instruction" name="preferred_lang_of_instruction">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Have any deceased parent? (Yes/No)" name="any_deceased_parent">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter mode of transport" name="mode_of_transport">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter your religion" name="religion">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Pre primary education (Grade One Only) " name="pre_primary_education">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Name of previous school" name="name_of_previous_school">
+                              </div>
+                            </div>
+                            
+                            <div class="form-group">
+                              <label for="previous_school_address" style="font-size: 20px;">Previous School Address</label>
+                              <textarea class="form-control" rows="3" name="previous_school_address" placeholder="Enter previous school address"></textarea>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter country, province & code" name="country_province_and_code">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter Medical Aid Number (If Any?)" name="medical_aid_number">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Medical Aid Name (If Any?)" name="medical_aid_name">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Medical Aid Main Member (If Any?)" name="medical_aid_main_member">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Your Doctor's name" name="doctor_name">
+                              </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="doctor_address" style="font-size: 20px;">Your Doctor's Address (If Any?)</label>
+                                <textarea class="form-control" rows="3" name="doctor_address" placeholder="Enter your doctor's physical address"></textarea>
+                              </div>
+
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Your Doctor's phone number" name="doctor_phone_number">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Any medical condition(s)? (Yes(Write it)/No)" name="medical_condition">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Dexterity of learner (Ambidexterous/Dextrous)" name="dexterity_of_learner">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Registered for social grant? (Yes/No)" name="registered_for_social_grant">
+                              </div>
+                            </div>
+                            
+                            <div class="form-group">
+                              <lable for="copy_of_immunisation_records" style="font-size: 20px;">Upload copy of immunisation records</label> 
+                                <input type="file" class="form-control" name="copy_of_immunisation_records" placeholder="Upload copy of immunisation records">
+                            </div>
+                            
+                            <div class="form-group">
+                              <lable for="progress_report_previous_school" style="font-size: 20px;">Upload progress report previous school (Transferring students only)</label> 
+                                <input type="file" class="form-control" name="progress_report_previous_school" placeholder="(Transferring students only)">
+                            </div>
+                            
+                            <div class="form-group">
+                              <lable for="copy_of_birth_certificate" style="font-size: 20px;">Upload copy of birth certificate</label> 
+                                <input type="file" class="form-control" name="copy_of_birth_certificate" placeholder="Upload copy of birth certificate">
+                            </div>
+                             
+                            <div class="form-group">
+                              <lable for="transfer_letter_previous_school" style="font-size: 20px;">Upload copy of transfer letter (Transferring students only)</label> 
+                                <input type="file" class="form-control" name="transfer_letter_previous_school" placeholder="(Transferring students only)">
+                            </div>
+                             
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter number of children at Mayfair" name="number_of_other_children_at_mayfair">
+                              </div>
+                            </div>
+                            
+                            <div class="form-group">
+                              <label for="enter_their_names" style="font-size: 20px;">Enter names of children in this school</label>
+                              <textarea class="form-control" rows="3" name="enter_their_names" placeholder="Enter name or (None) if there is not"></textarea>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter parent first name" name="parent_first_name">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter parent second name" name="parent_second_name">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Enter parent gender (Male/Female)" name="parent_gender">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Parent race (African, Caucasian etc)" name="parent_race">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Home language (Zulu, English, Sotho, etc)" name="home_language">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Identification number (I.D)" name="identification_number">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Passport number" name="passport_number">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Occupation" name="occupation">
+                              </div>
+                            </div>
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Employer" name="employer">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Surname of spouse" name="surname_of_spouse">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Spouse first name" name="spouse_first_name">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Spouse I.D number" name="spouse_id_number">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Marital status of parent (Married, Divorced etc)" name="marital_status_of_parent">
+                              </div>
+                            </div>
+                            
+                            <div class="col-xl-12">
+                              <div class="comment-form__input-box">
+                                  <input type="text" placeholder="Relationship to learner (Mother, Father, etc)" name="relationship_to_learner">
+                              </div>
+                            </div>
+                            
+                            </div>
+                                <button type="submit" class="btn btn-primary">Apply Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--contact Page End-->
+
+        <!--Site Footer Start-->
+		<footer class="site-footer">
+            <div class="container">
+                <div class="site-footer__top">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="site-footer__top-left">
+                                <div class="site-footer__top-logo-content">
+                                    <a href="index.html"><img src="{% static 'images/logo-light-1.png' %}" width="146" alt=""></a>
+                                    <p style="color: rgb(0, 0, 0);" class="site-footer__top-text">Welcome to Mayfair Academy<br>, the place in Education, for Greater tomorrow</p>
+                                </div> 
+                                <div class="site-footer__top-newsletter">
+                                    <h5 class="site-footer__top-newsletter-title">Subsrcibe for Latest Articles and
+                                        Resources</h5>
+                                    <form class="site-footer__top-newsletter-form">
+                                        <div class="site-footer__top-newsletter-input-box">
+                                            <input type="email" placeholder="Email Address" name="email">
+                                            <button type="submit" class="site-footer__top-newsletter-btn">Go</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="site-footer__top-right">
+                                <div class="site-footer__top-widget-box">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="100ms">
+                                            <div class="footer-widget__column footer-widget__explore clearfix">
+                                                <h3 class="footer-widget__title">Explore</h3>
+                                                <ul class="footer-widget__explore-list list-unstyled clearfix">
+                                                    <li><a href="{% url 'main' %}">Home</a></li>
+                                                    <li><a href="{% url 'about:about' %}">About Us</a></li>
+                                                    <li><a href="{% url 'newsletters:letters_list' %}">Our News Letters</a></li>
+                                                    <li><a href="{% url 'madrassa:madrassa' %}">Madrassa Umarfarook</a></li>
+                                                    <li><a href="{% url 'projects:projects' %}">Our Events</a></li>
+                                                    <li><a href="{% url 'grade_r:grade_r' %}">Grade R - Pre-School</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-4 wow fadeInUp" data-wow-delay="200ms">
+                                            <div class="footer-widget__column footer-widget__links clearfix">
+                                                <h3 class="footer-widget__title">Links</h3>
+                                                <ul class="footer-widget__links-list list-unstyled clearfix">
+                                                    <li><a href="{% url 'post_list' %}">News & Updates</a></li>
+                                                    <li><a href="{% url 'library:library' %}">Our Online Library</a></li>
+                                                    <li><a href="{% url 'gallery:gallery' %}">Our Gallery</a></li>
+                                                    <li><a href="{% url 'application:apply' %}">Application Form Here</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-lg-6 col-md-4 wow fadeInUp" data-wow-delay="300ms">
+                                            <div class="footer-widget__column footer-widget__contact clearfix">
+                                                <h3 style="color: rgb(0, 0, 0);" class="footer-widget__title">Contact</h3>
+                                                <a style="color: rgb(0, 0, 0);" href="mailto:info@mayfairacademy.co.za">info@mayfairacademy.co.za</a>
+
+                                                
+                                                <p style="color: rgb(0, 0, 0);" class="footer-widget__contact-text">
+                                                    66-9th Ave, Mayfair, Johannesburg 
+                                                     <br> 2092 P.O. Box 75, Crown Mines 2025 South Africa
+                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="site-footer__top-contact-details wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="site-footer__top-right-social">
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                    <div class="site-footer__top-right-phone">
+                                        <p style="color: rgb(0, 0, 0);" class="site-footer__top-right-phone-tagline">Call Anytime</p>
+                                        <a style="color: rgb(0, 0, 0);" href="tel:1307776-0608">Tel: +27 (0) 11 837 1899</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-footer__bottom">
+                    <p style="color: rgb(0, 0, 0);" class="site-footer__bottom-text">
+                         Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mayfair Academy -  All rights reserved</a></p>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+    </div><!-- /.page-wrapper -->
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="{% url 'main' %}" aria-label="logo image"><img src="{% static 'images/resources/logo.png' %}" width="155"
+                        alt="" /></a>
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a style="color: rgb(0, 0, 0);" href="mailto:info@mayfairacademy.co.za">info@mayfairacademy.co.za</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a style="color: rgb(0, 0, 0);" href="tel:+27 (0) 11 837 1899">Tel: +27 (0) 11 837 1899</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">            
+                    <a href="https://www.facebook.com/mayfairacademysa/" class="fab fa-facebook-square"></a>
+                    <a href="https://www.youtube.com/channel/UCkEcgEKkayINOtLkZfIJTcg" class="fab fa-youtube"></a>              
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <script src="{% static 'vendors/jquery/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendors/jarallax/jarallax.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-appear/jquery.appear.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-circle-progress/jquery.circle-progress.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-validate/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'vendors/nouislider/nouislider.min.js' %}"></script>
+    <script src="{% static 'vendors/odometer/odometer.min.js' %}"></script>
+    <script src="{% static 'vendors/swiper/swiper.min.js' %}"></script>
+    <script src="{% static 'vendors/tiny-slider/tiny-slider.min.js' %}"></script>
+    <script src="{% static 'vendors/wnumb/wNumb.min.js' %}"></script>
+    <script src="{% static 'vendors/wow/wow.js' %}"></script>
+    <script src="{% static 'vendors/isotope/isotope.js' %}"></script>
+    <script src="{% static 'vendors/countdown/countdown.min.js' %}"></script>
+    <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'vendors/bxslider/jquery.bxslider.min.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap-select/js/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'vendors/vegas/vegas.min.js' %}"></script>
+    <script src="{% static 'vendors/jquery-ui/jquery-ui.js' %}"></script>
+    <script src="{% static 'vendors/timepicker/timePicker.js' %}"></script>
+
+    <!-- template js -->
+    <script src="{% static 'js/conult.js' %}"></script>
+</body>
+
+</html>

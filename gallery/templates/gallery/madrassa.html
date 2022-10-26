@@ -1,0 +1,151 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'gallery/style.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/plugin.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/font.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/css/lightgallery.min.css' %}">
+
+    <meta name="description" content="Mayfair Academy - The Place to discover and unvail your excellence" />
+    <!-- document title -->
+    <title>Mayfair Academy | Welcome | Home - The Place to discover and unvail your excellence</title>
+</head>
+
+<body>
+    <!-- MAIN WRAPPER START
+            ============================================= -->
+    <div class="main-wrapper clearfix">
+        <!-- HEADER START
+                ============================================= -->
+        <header id="header">
+            <div class="header-style1-wrap">
+                <div class="header-content-left">
+                    <!-- LOGO START
+                                ============================================ -->
+                    <div class="logo">
+                        <h2 class="logo-title">
+                            <a href="#">Madrassa Umar-Farook & Ma'had Miftahul-Uloom</a>
+                        </h2>
+                    </div>
+                    <!-- LOGO END -->
+                </div>
+                <div class="header-content-right">
+                    <!-- NAVIGATION START
+                                ============================================= -->
+                <nav class="main-nav col-span-9  sm:col-span-12">
+                    <!-- Mobile menu toggle button -->
+                    <button class="jepret-menu-mobile">
+                        <i class="icon icon-reorder"></i>
+                    </button>
+                    <!-- Sample menu definition -->
+                    <ul id="main-menu" class="sm sm-clean mobile-menu">
+                        <li class="menu-item has-submenu">
+                            <a href="{% url 'gallery:green_club_gallery' %}">Green Club</a>
+                        </li>
+                        <li class="menu-item has-submenu">
+                            <a href="{% url 'gallery:school_gallery' %}">School Gallery</a>
+                        </li>
+                        <li class="menu-item has-submenu">
+                            <a href="{% url 'gallery:grade_r' %}">Grade R</a>
+                        </li>
+                        <li class="menu-item has-submenu">
+                            <a href="{% url 'gallery:madrassa' %}">Madrassa</a> 
+                        </li>
+                    </ul>
+                </nav>
+                    <!-- NAVIGATION END -->
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+        <!-- Content -->
+        <div class="content">
+            <div class="top-bar"></div>
+            <div class="left-bar"></div>
+            <div class="right-bar"></div>
+
+            <div class="carousel-block gallery-carousel-block">
+                <div class="column column-25 carousel-title-wrap">
+                    <div class="title-wrap">
+                        <h1 class="the-title">
+                            Detail projects
+                        </h1>
+                    </div>
+                    <div class="detail-wrap">
+                        <div class="detail-item">
+                            <span class="detail-title">Madrassa Umar-Farook</span>
+                         
+                        </div>
+                        
+                        <div class="detail-item">
+                            <span class="detail-title">Ma'had Miftahul-Uloom</span>
+                           
+                        </div>
+                        <br><br><br><br><br><br>
+                        <div class="detail-item">
+                            <h1>Click Image To View Full Screen</h1>
+                            <br><br><br>
+                            <a style="background-color: rgba(18, 6, 242, 0.815);" href="{% url 'main' %}" class="button style-2">Go Back Home</a>
+                        </div>
+                    </div>
+                    <div class="desc-wrap">
+                        <h3 class="the-title">
+                            All Events and Celebrations
+                        </h3>
+                        <p class="the-desc">
+                           Quran Memorization, Graduation, Quran Memorization Competitions and more ...
+                        </p>
+                    </div>
+                </div>
+                <div class="column column-75 carousel-wrap">
+                    <div class="swiper-container carousel-album">
+                        <div class="swiper-wrapper">
+                            {% for item in madrassa %} 
+                            <div class="swiper-slide carousel-img"
+                                style="background: url('{{ item.image.url }}'); background-size: cover; background-position: center center;"
+                                data-src="{{ item.image.url }}"
+                                title="Image">
+                                <div class="carousel-overlay"></div>
+                                <span class="icon-diagonal-arrows launch-gallery-icon"></span>
+                                <div class="album-detail">
+                                    <div class="album-title">
+                                        <h3 class="the-title">{{ item.title }}</h3>
+                                        <p>{{ item.timestamp }} </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Content -->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="copyright">
+                <p class="copyright-text">Mayfair Academy &copy; 2022</p>
+            </div>
+        </footer>
+        <!-- end Footer -->
+    </div>
+     
+    <script src="{% static 'gallery/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'gallery/js/jquery.smartmenus.min.js' %}"></script>
+    <script src="{% static 'gallery/js/aos.js' %}"></script>
+    <script src="{% static 'gallery/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'gallery/js/isotope.js' %}"></script>
+    <script src="{% static 'gallery/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'gallery/js/lightgallery-all.min.js' %}"></script>
+    <script src="{% static 'gallery/js/main.js' %}"></script>
+</body>
+
+</html>

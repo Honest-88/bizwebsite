@@ -1,0 +1,468 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Mayfair Academy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We are the place for your children to discover and unvail their Excellence. A place to realize and fulfill their dreams and unleash their potential! Best Private School In Johannesburg South Africa, Best Private School In Mayfair Johannesburg, " />
+    <meta property="og:title" content="Mayfair Academy - The Place to discover and unvail your excellence">
+
+    <meta property="og:type" content="Private school, Private schools in Johannesburg, Private schools in mayfair Johannesburg,mayfair academy facebook page, mayfair academy website, mayfair academy youtube channel, best private schools in South Africa, best private schools in Johannesburg, best private schools in mayfair, grade r, grade 12, south african education, Islamic Studies">
+    <meta property="og:url" content="www.mayfairacademy.co.za, mayfairacademy.co.za, mayfairacademy">
+    
+    <!-- ========== Page Title ========== -->
+    <title>Mayfair Academy | The Best Private School In Johannesburg, South Africa - The Place to discover and unvail your excellence</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicons/apple-touch-icon.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/favicon-16x16.png' %}" />
+    <link rel="manifest" href="{% static 'images/favicons/site.webmanifest' %}" />
+   
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'new/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/css/flaticon-set.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/css/elegant-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/css/magnific-popup.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/css/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/css/owl.theme.default.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/css/animate.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/css/bootsnav.css' %}" rel="stylesheet" />
+    <link href="{% static 'new/style.css' %}" rel="stylesheet">
+    <link href="{% static 'new/css/responsive.css' %}" rel="stylesheet" />
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet">
+
+</head>
+<!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('hnf3tc2v46n3');
+    </script>
+    <!-- End of Async Drift Code -->
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area address-two-lines bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 address-info">
+                    <div class="info box">
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-map"></i>Address</span>66 9th Ave, Mayfair, Johannesburg
+                            </li>
+                            <li>
+                                <span><i class="fas fa-envelope-open"></i>Email</span><a href="mailto:info@mayfairacademy.co.za">info@mayfairacademy.co.za</a>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone"></i>Contact</span><a href="tel:+27 (0) 11 837 1899">+27 (0) 11 837 1899</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-login text-right col-md-4">
+                    <a href="{% url 'application:apply' %}">
+                        <i class="fas fa-edit"></i> Apply Here
+                    </a>
+                    <a href="{% url 'newsletters:letters_list' %}">
+                        <i class="fas fa-book"></i> News Letters
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default navbar-sticky bootsnav">
+
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search">
+                        <div class="input-group">
+                            <form action="#">
+                              
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                       
+                    </ul>
+                </div>        
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="{% url 'main' %}">
+                        <img src="{% static 'new/img/logo.png' %}" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
+                        <li class="dropdown">
+                            <a href="{% url 'main' %}" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'madrassa:madrassa' %}">Madrassah Islamic Studies</a></li>
+                                <li><a href="{% url 'grade_r:grade_r' %}">Our Grade R</a></li> 
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{% url 'about:about' %}" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li>                                   
+                                    <li><a href="{% url 'newsletters:letters_list' %}">Read News Letters</a></li>
+                                        
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{% url 'post_list' %}" class="dropdown-toggle active" data-toggle="dropdown" >News</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'post_list' %}">Our News & Updates</a></li>
+                             
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{% url 'library:library' %}" class="dropdown-toggle active" data-toggle="dropdown" >Library</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'library:library' %}">Our Online Library</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{% url 'gallery:gallery' %}" class="dropdown-toggle active" data-toggle="dropdown" >Galleries</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'gallery:grade_r' %}">Grade R Gallery</a></li>
+                                <li><a href="{% url 'gallery:green_club_gallery' %}">Green Club Gallery</a></li>
+                                <li><a href="{% url 'gallery:school_gallery' %}">School Gallery</a></li>
+                                
+                                <li><a href="{% url 'gallery:madrassa' %}">Madrassa Islamic School</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="{% url 'projects:projects' %}" class="dropdown-toggle" data-toggle="dropdown" >Events</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{% url 'projects:projects' %}">Find Our Projects & Events</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{% url 'application:apply' %}">Apply Online</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark text-center bg-fixed text-light" style="background-image: url('/static/new/about.jpg ');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Online Library</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="{% url 'main' %}"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#">Online Library</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+    
+    <!-- Start Popular Courses 
+    ============================================= -->
+    <div class="popular-courses default-padding bottom-less without-carousel">
+        <div class="container">
+            <div class="row">
+                <div class="popular-courses-items bottom-price">
+                    <!-- Single Item -->
+                    {% for library in queryset %}
+                    <div class="col-md-4 col-sm-6 equal-height">
+                        <div class="item">
+                            <div class="thumb">
+                                <a href="{% url 'library:library_detail' library.id %}">
+                                    <img src="{{ library.image.url }}" alt="Thumb">
+                                </a>
+                                <div class="overlay">
+                                    <a class="btn btn-theme effect btn-sm" href="{% url 'library:library_detail' library.id %}">
+                                        <i class="fas fa-chart-bar"></i> Read More ...
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <div class="author-info">
+                                    <div class="thumb">
+                                        
+                                    </div>
+                                    <div class="others">
+                                        <a href="#">Posted By: {{ library.author }} </a>
+                                        <div class="rating">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4><a href="{% url 'library:library_detail' library.id %}">{{ library.title }}</a></h4>
+                                <div class="cats">
+                                  
+                                </div>
+                                <p>
+                                    {{ library.content|safe|truncatewords:20}}
+                                </p>
+                                <div class="bottom-info">
+                                    <ul>
+                                      
+                                        <li>
+                                            <i class="fas fa-clock"></i> Posted: {{ library.timestamp|timesince }} ago
+                                        </li>
+                                    </ul>
+                                    <div class="price-btn">
+                                        <div class="overlay">
+                                            <a class="btn btn-theme effect btn-sm" href="{% url 'library:library_detail' library.id %}">
+                                                <i class="fas fa-chart-bar"></i> Read More ...
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Popular Courses -->
+    <div class="text-center bg-fixed text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="blog-pagination justify-content-center d-flex">
+                        <ul class="pagination">
+                            {% if queryset.has_previous %}
+            
+                            <div class="news-one__date">
+                                <li class="page-item">
+                                    <a href="?{{ page_request_var }}={{ queryset.previous_page_number }}">Previous Page</a>
+                                </li>
+                                <p>Go Back ...</p>
+                            </div>
+                            
+                            {% endif %}
+                            <li class="page-item">
+                                <a href="#" class="page-link">Page: {{ queryset.number }} </a>
+                            </li>
+                            {% if queryset.has_next %}
+                            <div style="position: relative;" class="news-one__date">
+                                <li class="page-item">
+                                    <a href="?{{ page_request_var }}={{ queryset.next_page_number }}" class="news-one__arrow">Next Page<span
+                                                class="icon-right-arrow"></span></a>
+                                </li>
+                                <p>Go Next ...</p>
+                            </div>
+            
+                            
+                            {% endif %}
+                        </ul>
+                    </nav>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+  
+        <!-- Start Footer 
+    ============================================= -->
+    <footer class="bg-dark default-padding-top text-light">
+        <div class="container">
+            <div class="row">
+                <div class="f-items">
+                    <div class="col-md-4 item">
+                        <div class="f-item">
+                            <img src="{% static 'new/img/logo.png' %}" alt="Logo">
+                            <p>
+                                Physical Address: 
+                                90 9th Avenue,
+                                 Mayfair Johannesburg 2092 P.O. Box 75,
+                                  Crown Mines 2025 South Africa
+                            </p>
+                            
+                            <div class="subscribe">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 item">
+                        <div class="f-item link">
+                            <h4>Links</h4>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com/mayfairacademysa/">Our Facebook Page</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UCkEcgEKkayINOtLkZfIJTcg/videos">Our Youtube Channel</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/Mahad-Miftahul-Uloom-Institute-of-Islamic-Studies-1994887343924991/">Mahad-Miftahul Uloom Institute of Islamic Studies</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 item">
+                        <div class="f-item link">
+                            <h4>We Are Mayfair Academy</h4>
+                            <ul>
+                                <li>
+                                    <a href="tel:011 8371 899">Tell: +27 (0) 11 837 1899</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@mayfairacademy.co.za">Email: info@mayfairacademy.co.za</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 item">
+                        <div class="f-item address">
+                            <h4>Address</h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-envelope"></i> 
+                                    <p>Email <span><a href="mailto:support@validtheme.com">info@mayfairacademy.co.za</a></span></p>
+                                </li>
+                                
+                            </ul>
+                            <div class="opening-info">
+                                <h5>Opening Hours</h5>
+                                <ul>
+                                    <li> <span> Mon - Friday :  </span>
+                                    <div class="pull-right"> 07:00 - 16:00 </div>
+                                    </li>
+                                    <li> <span> Weekends :</span>
+                                    <div class="pull-right"> Appointment Only </div>
+                                    </li>
+                                    <li> <span>  </span>
+                                    <div class="pull-right closed">  </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Mayfair Academy -  All rights reserved</p>
+                        </div>
+                        <div class="col-md-6 text-right link">
+                            <ul>
+                                <li>
+                                    <a href="#">Terms of user</a>
+                                </li>
+                                <li>
+                                    <a href="#">License</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+    </footer>
+    <!-- End Footer -->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="{% static 'new/js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'new/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'new/js/equal-height.min.js' %}"></script>
+    <script src="{% static 'new/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'new/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'new/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'new/js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'new/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'new/js/wow.min.js' %}"></script>
+    <script src="{% static 'new/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'new/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'new/js/count-to.js' %}"></script>
+    <script src="{% static 'new/js/loopcounter.js' %}"></script>
+    <script src="{% static 'new/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'new/js/bootsnav.js' %}"></script>
+    <script src="{% static 'new/js/main.js' %}"></script>
+
+</body>
+</html>

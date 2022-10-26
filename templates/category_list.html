@@ -1,0 +1,18 @@
+
+    <!-- Widget [Categories Widget]-->
+    <div class="widget categories">
+        <header>
+          <h3 class="h6">Category Posts</h3>
+        </header>
+        {% for post in category_posts %}
+        <div class="item d-flex justify-content-between">
+          <a href="{{ post.get_absolute_url }}">{{ post.title }}</a><span></span>
+        </div>
+        {% endfor %}
+      </div>
+  </aside>
+  </div>
+  </div>
+  
+  
+  
